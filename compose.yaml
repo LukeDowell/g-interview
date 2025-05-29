@@ -1,1 +1,9 @@
 services:
+  database:
+    image: postgres:17.5-alpine
+    ports:
+    - '5432'
+    environment:
+      POSTGRES_USER: grainger-test-user
+      POSTGRES_DB: grainger-test-db
+      POSTGRES_PASSWORD: grainger-test-password

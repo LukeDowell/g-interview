@@ -1,7 +1,13 @@
 # Luke Dowell -- Grainger Interview App
 
 * Built with Corretto's JDK 17
-* 
+* Dependency containers will magically start and close with Spring's docker compose support
+* React frontend is located under `web/`
+
+## Running
+
+1. In project root, run `./gradlew bR`
+2. In another terminal window, run `cd web && npm i && npm run dev`
 
 
 ## Requirements
@@ -11,7 +17,7 @@ In preparations for your coding round, pls bring the below –
 
 
 We're excited to get to know you and give you the space to show off your skills. We'd like you to spend some time setting up the skeleton of a simple full-stack application. This allows for you to set up your
- own environment, and we strongly encouragethat youuse the tools you're most confident using.
+ own environment, and we strongly encourage that youuse the tools you're most confident using.
 We'd like you to build a feature that shows a list of products and also allows a user to create a new product. A product should only have a name, that’s it. This should be quite simple, and the intent is to
  set up a skeleton project to work from in the interview. We want the application have a React frontend that interacts with a Spring Boot backend that reads and writes to a Postgres database. Even though the initial version of this will be a single page, we
  recommend that you setup the tools that you are most comfortable with to help the live interview to focus on creating new features.
